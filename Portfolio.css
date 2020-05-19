@@ -1,0 +1,500 @@
+    * {
+        box-sizing: border-box;
+    }
+    /* Style of the body */
+
+    body {
+        font-family: Montserrat;
+        margin: 0;
+        background-color: white;
+    }
+    /* Style of the header */
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.backbutton {
+    display: block;
+    float: left;
+    margin-top: -3em;
+    margin-left: 2em;
+}
+.active {
+  display: block;
+  text-align: center;
+  padding: 14px 1em;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  margin-left: 1em;
+    transition: 1s ease;
+}
+
+.active img {
+    width: 3em;
+}
+
+.backbutton img {
+    width: 1em;
+}
+
+    .header-image {
+        background-image: url("Foto's/Me-port.JPG");
+        height: 40em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .header-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2em;
+    }
+
+    .header-text a img {
+        background-color: darksalmon;
+        cursor: pointer;
+        width: 1em;
+        border-radius: 5em;
+        margin-bottom: -2em;
+
+    }
+
+.header-text a img:hover{
+    transition: 1s ease-in;
+    width: 1.2em;
+    margin-bottom: -4em;
+}
+
+
+
+
+    .main a button {
+        background-color: darksalmon;
+        font-family: Montserrat;
+        font-size: 1em;
+        border-radius: 10em;
+        padding: 1em 1.5em 1em 1.5em;
+        border-style: hidden;
+        width: 50%;
+        cursor: pointer;
+        margin-top: 2em;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    button:hover {
+        background-color: darksalmon;
+        font-family: Montserrat;
+        font-size: 0.5em;
+        border-radius: 10em;
+        padding: 1em 1.5em 1em 1.5em;
+        color: white;
+    }
+
+    button {
+        border-radius: 4px;
+        background-color: #f4511e;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    button:hover span {
+        padding-right: 25px;
+    }
+
+    button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .introtekstje {
+        color: white;
+        margin: 8em;
+        border-left: 6px solid white;
+        padding-left: 1em;
+    }
+    /* Style of the top navigation bar */
+
+
+
+    /* hele column */
+
+    #row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3em;
+    }
+
+
+
+
+
+
+
+    /* My name is anoush*/
+
+    .side {
+        flex: 40%;
+        color: black;
+        margin: 5em;
+    }
+
+
+
+
+
+    /* skill bars */
+
+    .skills {
+        flex: 20%;
+        color: black;
+        margin: 5em;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 1em;
+        background-color: lightgray;
+        border-radius: 1em;
+    }
+
+    .progress-bar-fill {
+        display: block;
+        height: 1em;
+        background-color: green;
+        border-radius: 1em;
+    }
+
+
+
+
+
+
+
+    /* my work */
+
+    .main {
+        color: black;
+        flex: 80%;
+        margin: 5em;
+    }
+
+    .kolom {
+        position: relative;
+        float: left;
+        width: 33.33%;
+    }
+    /* Clearfix (clear floats) */
+
+    .rij::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .kolom>img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 3em;
+        padding: 1em;
+    }
+
+    .overlay {
+
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        border-radius: 3em;
+
+    }
+
+    .kolom:hover .overlay {
+        opacity: 60%;
+    }
+
+    .text {
+        color: white;
+        background-color: black;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+    /* contact */
+
+    .secmain {
+        flex: 80%;
+        color: black;
+        padding-top: 10em;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type=text],
+    textarea {
+        width: 100%;
+        padding: 1em;
+        border: 0.2em solid #ccc;
+        border-radius: 1em;
+        margin-top: 1em;
+        margin-bottom: 3em;
+        font-family: Montserrat;
+    }
+
+    input[type=submit] {
+        background-color: darksalmon;
+        padding: 0.5em 1em 0.5em 1em;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        border-radius: 5em;
+        font-family: Montserrat;
+        width: 100%;
+        font-size: 1em;
+        padding: 1em;
+        color: white;
+    }
+
+    input[type=submit]:hover {
+        color: black;
+    }
+    /* Footer */
+
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+    }
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+ .kolom {
+        width: 100%;
+    }
+
+    .main a button{
+        width: 100%;
+    }
+
+     .sideproducts{
+        width: 100%;
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width: 1000px){
+    .secmain {
+        width: 50%;
+
+    }
+    .kolom{
+            margin-bottom: 3em;
+
+    }
+  .sideproducts{
+        width: 40%;
+    }
+
+}
+
+
+
+
+        /* My work html pagina */
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 80%;
+border-radius: 1em;
+    margin: 2em;
+}
+
+.column img:hover{
+    opacity: 75%;
+    cursor: pointer;
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+.sideproducts {
+        color: black;
+        margin: 5em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+        /* Product paginas */
+
+
+
+ #productpagina {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3em;
+    }
+
+
+.sideprod {
+        flex: 30%;
+        color: black;
+        margin: 5em;
+    }
+
+
+
+
+.afbeelding {
+flex: 30%;
+    margin: 8em;
+
+}
+
+.afbeelding > img{
+
+    border-radius: 2em;
+}
+
+video {
+    display: block;
+    left: auto;
+    right: auto;
+    width: 100%;
+    margin-top: 3em;
+}
+.downloadTEX {
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 1em 2em;
+    margin: 2em;
+    border-radius: 3em;
+}
