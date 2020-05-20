@@ -471,7 +471,8 @@ border-radius: 1em;
 
 .afbeelding {
 flex: 30%;
-    margin: 8em;
+    margin: 4em;
+    margin-top: 8em;
 
 }
 
