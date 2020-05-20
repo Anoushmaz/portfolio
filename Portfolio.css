@@ -167,7 +167,6 @@ li a:hover:not(.active) {
     #row {
         display: flex;
         flex-wrap: wrap;
-        margin: 3em;
     }
 
 
