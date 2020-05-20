@@ -75,14 +75,15 @@ li a:hover:not(.active) {
         width: 3em;
        padding: 1em;
         border-radius: 5em;
-        margin-bottom: -2em;
+        margin-bottom: -3em;
 
     }
 
 .header-text a img:hover{
-    transition: 1s ease-in;
+    transition: 0.8s ease-in-out;
     width: 3em;
     margin-bottom: -4em;
+    background-color: indianred;
 }
 
 
