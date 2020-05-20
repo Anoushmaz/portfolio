@@ -335,6 +335,7 @@ display: block;
         padding: 20px;
         text-align: center;
         background: #ddd;
+       margin-top: 3em;
     }
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
