@@ -224,10 +224,14 @@ li a:hover:not(.active) {
 
     /* my work */
 
-    .main {
+    .mainmain {
         color: black;
         flex: 80%;
         margin: 5em;
+}
+
+    .main {
+        background-color: whitesmoke;
     }
 
     .kolom {
