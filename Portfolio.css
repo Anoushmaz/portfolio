@@ -186,6 +186,14 @@ li a:hover:not(.active) {
 
 
 
+.side > .uitgelicht{
+    font-size: 30px;
+  border-left-style: solid;
+    border-color: indianred;
+    border-width: 0.3em;
+    padding-left: 0.5em;
+    margin-top: 3em;
+}
 
 
     /* skill bars */
