@@ -23,11 +23,6 @@ ul {
   width: 100%;
 }
 
-.side > h3{
-    float: left;
-    padding: 1em;
-}
-
 .backbutton {
     display: block;
     float: left;
