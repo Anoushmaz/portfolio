@@ -6,7 +6,7 @@ $(document).ready(function () {
     // typing animation script
 
     var typed = new Typed(".typing", {
-        strings: ["UI design", "design issues", "illustrations", "branding", "UX design", "product design", "user research", "design questions", "motion design", "a basic coded website (like this one)"],
+        strings: ["UI design", "UX design", "illustrations", "branding", "design issues", "product design", "user research", "motion design", "a basic coded website (like this one)", "other design questions"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
