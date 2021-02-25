@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+p .red {
+    background-color: crimson;
+    color: white;
+}
+
+p span {
+    border-bottom-style: solid;
+    border-bottom-color: crimson;
+    margin-bottom: 30px;
+}
+
+p {
+    max-width: 600px;
+}
+
+.about-txt {
+    animation: facts 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes facts {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    13% {
+        transform: translate(5px, 1px) rotate(2deg);
+    }
+    16% {
+        transform: translate(10px, 1px) rotate(-2deg);
+    }
+    20% {
+        transform: translate(5px, 1px) rotate(2deg);
+    }
+    24% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+}
+
+.contact {
+    margin-right: 30px
+}
+
+.home .home-content .smallbutton {
+    display: inline-block;
+    background: none;
+    color: white;
+    font-size: 25px;
+    padding: 0px;
+    margin-top: 50px;
+    border-radius: 6px;
+    border: none;
+    transition: all 0.5s ease;
+    font-size: 8px;
+}
+
+.home .home-content .smallbutton:hover {
+    text-decoration-line: underline;
+    color: crimson;
+}
+
+.home .home-content .text-2 a {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    border: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.home .home-content .text-2 a:hover {
+    background-color: crimson;
+    color: black;
+}
+
+.mywork img {
+    background-color: white;
+    padding: 1px;
+    border-radius: 160px;
+    width: 20px;
+    margin-top: 4px;
+    margin-right: 20px;
+}
+
+.mywork .oudlogo {
+    background-color: black;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 30 0px;
+    font-family: "Raleway", sans-serif;
+    margin-top: 20px;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span {
+    color: #DC143C;
+}
+
+.navbar .menu li {
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+}
+
+.menu-btn {
+    width: 40px;
+    margin: 5px;
+}
+
+.menu-btn:hover {
+    opacity: 30%;
+    width: 38px;
+    transition: 0.2s ease;
+}
+
+
+/* home section styling */
+
+.home {
+    display: flex;
+    background-color: black;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: "Raleway", sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 0px;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: #DC143C;
+    font-weight: 500;
+}
+
+.home .home-content a {
+    display: inline-block;
+    background-color: #DC143C;
+    ;
+    color: white;
+    font-size: 25px;
+    padding: 12px 26px;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: 2px solid #DC143C;
+    ;
+    transition: all 0.5s ease;
+}
+
+.home .home-content a:hover {
+    color: #DC143C;
+    background: none;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: darkgray;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    padding: 20px;
+    font-size: 10px;
+}
+
+.home .home-content a {
+    animation: oneshake 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes oneshake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    90% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    95% {
+        transform: translate(1px, 1px) rotate(-3deg);
+    }
+    98% {
+        transform: translate(1px, 1px) rotate(5deg);
+    }
+    100% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+}
+
+.mySlides2 img {
+    background-color: #EF9393;
+    opacity: 50%;
+    vertical-align: middle;
+    border-radius: 6px;
+}
+
+.mySlides2 p {
+    color: white;
+    margin: 20px;
+}
+
+.mySlides2 {
+    display: none;
+    max-width: 400px;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    display: inline-block;
+    max-width: 40%;
+    position: relative;
+    margin-right: 60px;
+}
+
+.next-to {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+.tags1,
+.tags2 {
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 6px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.tags1 {
+    border-color: crimson;
+    border-style: solid;
+}
+
+.tags2 {
+    border-color: white;
+    border-style: solid;
+}
+
+
+/* Next & previous buttons */
+
+.home .home-content .slideshow-container a {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    padding: 16px;
+    margin-left: -2px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.home .home-content .slideshow-container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* responsive media queries */
+
+@media (max-width: 1104px) {
+    .home .max-width {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+        }
+
+    .tags1,
+    .tags2 {
+        font-size: 14px;
+        }
+}
+
+@media (max-width: 750px) {
+    .next-to .tags1 {
+        padding: 0px;
+        margin: 0px;
+        border-radius: 0px;
+        border: none;
+        border-bottom: crimson solid;
+        margin-right: 6px;
+        }
+
+    .next-to .tags2 {
+        padding: 0px;
+        margin: 0px;
+        border-radius: 0px;
+        border: none;
+        border-bottom: white solid;
+        margin-right: 6px;
+        }
+
+    .slideshow-container {
+        max-width: 100%;
+        margin: 0px;
+        }
+
+    .next-to {
+        width: 100%;
+        }
+}
+
+@media (max-width: 700px) {
+    .home .home-content .text-2 {
+        font-size: 60px;
+        }
+    .home .home-content .text-3 {
+        font-size: 35px;
+        }
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+        }
+    .home .home-content a:hover {
+        color: #DC143C;
+        background: none;
+        }
+    .next-to .tags1 {
+        padding: 0px;
+        margin: 0px;
+        border-radius: 0px;
+        border: none;
+        border-bottom: crimson solid;
+        margin-right: 6px;
+        }
+
+    .next-to .tags2 {
+        padding: 0px;
+        margin: 0px;
+        border-radius: 0px;
+        border: none;
+        border-bottom: white solid;
+        margin-right: 6px;
+        }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+        }
+    .home .home-content .text-2 {
+        font-size: 50px;
+        }
+    .home .home-content .text-3 {
+        font-size: 32px;
+        }
+    .home .home-content a {
+        font-size: 20px;
+        }
+}
+
+@media (max-width: 500px) {
+    .menu-btn {
+        margin: 2px;
+        }
+    .home .home-content .text-2 {
+        font-size: 40px;
+        }
+    .home .home-content .text-3 {
+        font-size: 27px;
+        }
+    .contact {
+        width: 100%;
+        text-align: center;
+        }
+    .mywork {
+        width: 100%;
+        text-align: center;
+        }
+    .home .home-content a {
+        font-size: 18px;
+        }
+    .home .home-content .text-2 a {
+        max-width: 180px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        }
+}
