@@ -5,6 +5,9 @@
     text-decoration: none;
 }
 
+ .text-3 br{
+        display: none;
+    }
 p .red {
     background-color: crimson;
     color: white;
@@ -445,6 +448,10 @@ p {
         }
     .home .home-content a {
         font-size: 18px;
+        width: 100%;
+        text-align: center;
         }
-
+    .text-3 br{
+        display: inline;
+    }
 }
