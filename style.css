@@ -78,6 +78,8 @@ p {
     border: none;
     margin-right: 10px;
     margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .home .home-content .text-2 a:hover {
@@ -85,19 +87,19 @@ p {
     color: black;
 }
 
-.mywork img {
+.mywork img, .oudport img {
     background-color: white;
     padding: 1px;
     border-radius: 160px;
-    width: 20px;
-    margin-top: 4px;
+    width: 24px;
     margin-right: 20px;
+    margin-top: 5px;
 }
 
-.mywork .oudlogo {
+.oudport .oudlogo {
     background-color: black;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .max-width {
@@ -421,7 +423,6 @@ p {
 }
 
 @media (max-width: 500px) {
-    
     .menu-btn {
         margin: 2px;
         }
@@ -435,17 +436,15 @@ p {
         width: 100%;
         text-align: center;
         }
-    .mywork {
-        width: 100%;
+
+    .home .home-content .text-2 a {
         text-align: center;
+        width: 100%;
+        margin-left: 0px;
+
         }
     .home .home-content a {
         font-size: 18px;
-        width: 100%;
         }
-    .home .home-content .text-2 a {
-        max-width: 180px;
-        margin-top: 2px;
-        margin-bottom: 2px;
-        }
+
 }
