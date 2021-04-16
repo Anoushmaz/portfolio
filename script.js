@@ -6,7 +6,7 @@ $(document).ready(function () {
     // typing animation script
 
     var typed = new Typed(".typing", {
-        strings: ["UI design", "UX design", "illustrations", "branding", "design issues", "product design", "user research", "motion design", "a basic coded website (like this one)", "other design questions"],
+        strings: ["UI/UX design", "design for web, Android and iOS", "concepting", "user research", "HTML/CSS responsive websites", "motion design", "illustrations", "branding"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -41,3 +41,21 @@ function showSlides(n, no) {
     }
     x[slideIndex[no] - 1].style.display = "block";
 }
+
+
+
+
+
+
+
+
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+

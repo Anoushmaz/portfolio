@@ -5,213 +5,342 @@
     text-decoration: none;
 }
 
- .text-3 br{
-        display: none;
-    }
-p .red {
-    background-color: crimson;
-    color: white;
-}
 
-p span {
-    border-bottom-style: solid;
-    border-bottom-color: crimson;
-    margin-bottom: 30px;
-}
-
-p {
-    max-width: 600px;
-}
-
-.about-txt {
-    animation: facts 10s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes facts {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-    10% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-    13% {
-        transform: translate(5px, 1px) rotate(2deg);
-    }
-    16% {
-        transform: translate(10px, 1px) rotate(-2deg);
-    }
-    20% {
-        transform: translate(5px, 1px) rotate(2deg);
-    }
-    24% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-    100% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-}
-
-.contact {
-    margin-right: 30px
-}
-
-.home .home-content .smallbutton {
+.sneak{
     display: inline-block;
-    background: none;
-    color: white;
-    font-size: 25px;
-    padding: 0px;
-    margin-top: 50px;
+    border: solid white;
     border-radius: 6px;
-    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-right: 16px;
     transition: all 0.5s ease;
-    font-size: 8px;
-}
+    animation: oneshake 20s;
+    animation-iteration-count: infinite;
 
-.home .home-content .smallbutton:hover {
-    text-decoration-line: underline;
-    color: crimson;
 }
-
-.home .home-content .text-2 a {
-    background-color: white;
-    color: black;
-    border-radius: 50px;
-    border: none;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.home .home-content .text-2 a:hover {
-    background-color: crimson;
-    color: black;
-}
-
-.mywork img, .oudport img {
-    background-color: white;
-    padding: 1px;
-    border-radius: 160px;
-    width: 24px;
-    margin-right: 20px;
-    margin-top: 5px;
-}
-
-.oudport .oudlogo {
-    background-color: black;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
+/* PAGINA ACHTERGRONDEN */
 
 .max-width {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
+.home .max-width,
+.contactpage .max-width,
+.afstudeerpage .max-width,
+.cvpage .max-width,
+.workpage .max-width {
+    margin: auto 0 auto 0px;
+}
 
+.home {
+    display: flex;
+    background-color: black;
+    background-blend-mode: darken;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+    font-family: "Raleway", sans-serif;
+}
+.contactpage {
+    display: flex;
+    background-color: #171717;
+    background-image: url("Photos/GIF/Dogs/GIF:dog:ipad.gif");
+    background-blend-mode: soft-light;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+    font-family: "Raleway", sans-serif;
+}
+.cvpage {
+    display: flex;
+    background-color: #171717;
+    background-image: url("Photos/GIF/Cats/GIF:cat:gaming.gif");
+    background-blend-mode: soft-light;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+    font-family: "Raleway", sans-serif;
+}
+.afstudeerpage {
+    display: flex;
+    background-color: #171717;
+    background-image: url("Photos/GIF/GIF:timetravel.gif");
+    background-blend-mode: soft-light;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+    font-family: "Raleway", sans-serif;
+}
+.workpage {
+    display: flex;
+    background-color: #171717;
+    background-image: url("Photos/GIF/Cats/GIF:cat:sleepy.gif");
+    background-blend-mode: soft-light;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+
+
+
+
+/* TEXT-1 */
+.home .home-content .text-1,
+.contactpage .home-content .text-1,
+.afstudeerpage .home-content .text-1,
+.cvpage .home-content .text-1,
+.workpage .home-content .text-1 {
+    font-size: 27px;
+    color: white;
+}
+
+
+
+
+/* TEXT-2 */
+.home .home-content .text-2,
+.contactpage .home-content .text-2,
+.afstudeerpage .home-content .text-2,
+.cvpage .home-content .text-2,
+.workpage .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    color: white;
+}
+
+
+
+
+/* TEXT-3 */
+.text-3 a {
+    display: inline-block;
+}
+
+.text-3 br {
+    display: none;
+}
+
+.home .home-content .text-3,
+.contactpage .home-content .text-3,
+.afstudeerpage .home-content .text-3,
+.cvpage .home-content .text-3,
+.workpage .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+    color: white;
+}
+.home .home-content .text-3 span,
+.contactpage .home-content .text-3 span,
+.afstudeerpage .home-content .text-3 span,
+.cvpage .home-content .text-3 span,
+.workpage .home-content .text-3 span {
+    color: crimson;
+    font-weight: 600;
+    border-radius: 1px;
+}
+
+
+
+
+
+/* NAV BAR */
 .navbar {
     position: fixed;
     width: 100%;
-    padding: 30 0px;
-    font-family: "Raleway", sans-serif;
-    margin-top: 20px;
+    padding: 25px 0;
+    font-family: "Montserrat"
 }
-
 .navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+.logo span {
+    font-size: 20px;
+    color: crimson;
+    border-radius: 30px;
+    background-color: white;
+    padding: 6px;
+    margin: 4px;
+    top: -5px;
+    position: relative;
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
 .navbar .logo a {
     color: white;
-    font-size: 35px;
+    font-size: 34px;
     font-weight: 600;
 }
-
-.navbar .logo a span {
-    color: #DC143C;
-}
-
-.navbar .menu li {
-    display: inline-block;
-}
-
 .navbar .menu li a {
-    display: block;
-}
-
-.menu-btn {
-    width: 40px;
-    margin: 5px;
-}
-
-.menu-btn:hover {
-    opacity: 30%;
-    width: 38px;
-    transition: 0.2s ease;
-}
-
-
-/* home section styling */
-
-.home {
-    display: flex;
-    background-color: black;
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
     color: white;
-    min-height: 500px;
-    font-family: "Raleway", sans-serif;
-}
-
-.home .max-width {
-    margin: auto 0 auto 0px;
-}
-
-.home .home-content .text-1 {
-    font-size: 27px;
-}
-
-.home .home-content .text-2 {
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-
-.home .home-content .text-3 {
-    font-size: 40px;
-    margin: 5px 0;
-}
-
-.home .home-content .text-3 span {
-    color: #DC143C;
+    font-size: 18px;
     font-weight: 500;
+    margin-left: 25px;
 }
 
+
+
+
+
+
+
+
+
+
+/* CONTACT link */
+.contactpage .home-content a {
+   display: inline-block;
+    border: solid crimson;
+    border-radius: 6px;
+    background-color: crimson;
+    color: white;
+    padding: 12px 24px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-right: 16px;
+    transition: all 0.5s ease;
+    animation: oneshake 20s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+/* Resume LINK  */
+.cvpage .home-content a{
+    display: inline-block;
+    border: solid crimson;
+    border-radius: 6px;
+    background-color: crimson;
+    color: white;
+    padding: 12px 24px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-right: 16px;
+    transition: all 0.5s ease;
+    animation: oneshake 20s;
+    animation-iteration-count: infinite;
+}
+
+/* Home LINK  */
 .home .home-content a {
     display: inline-block;
-    background-color: #DC143C;
-    ;
-    color: white;
-    font-size: 25px;
-    padding: 12px 26px;
-    margin-top: 30px;
+    border: solid crimson;
     border-radius: 6px;
-    border: 2px solid #DC143C;
-    ;
+    background-color: none;
+    color: crimson;
+    padding: 12px 24px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-right: 16px;
     transition: all 0.5s ease;
+    animation: oneshake 20s;
+    animation-iteration-count: infinite;
 }
 
-.home .home-content a:hover {
-    color: #DC143C;
-    background: none;
+
+/* Designs LINK*/
+.workpage .home-content a {
+     display: inline-block;
+    border: solid crimson;
+    border-radius: 6px;
+    background-color: crimson;
+    color: white;
+    padding: 12px 24px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    transition: all 0.5s ease;
+    animation: oneshake 20s;
+    animation-iteration-count: infinite;
 }
 
+
+a img {
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: -4px;
+}
+
+/* HOVER LINKS */
+.home .home-content a:hover,
+.contactpage .home-content a:hover,
+.afstudeerpage .home-content a:hover,
+.cvpage .home-content a:hover,
+.workpage .home-content a:hover {
+    background: white;
+    border: solid white;
+    color: crimson;
+}
+
+
+
+
+
+
+
+
+
+
+/* ANIMATIE LINKS */
+@keyframes oneshake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    90% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    95% {
+        transform: translate(1px, 1px) rotate(-3deg);
+    }
+
+    98% {
+        transform: translate(1px, 1px) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+}
+
+
+
+
+
+
+/* FOOTER */
 .footer {
     position: fixed;
     left: 0;
@@ -224,44 +353,31 @@ p {
     font-size: 10px;
 }
 
-.home .home-content a {
-    animation: oneshake 10s;
-    animation-iteration-count: infinite;
-}
 
-@keyframes oneshake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-    90% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-    95% {
-        transform: translate(1px, 1px) rotate(-3deg);
-    }
-    98% {
-        transform: translate(1px, 1px) rotate(5deg);
-    }
-    100% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-}
+
+
+
+
+/* Slideshow sneak */
 
 .mySlides2 img {
-    background-color: #EF9393;
-    opacity: 50%;
     vertical-align: middle;
     border-radius: 6px;
+    height: 240px;
+    width: 100%;
+    max-width: 1300px;
+    object-fit: cover;
 }
 
 .mySlides2 p {
     color: white;
+    font-size: 24px;
     margin: 20px;
 }
 
 .mySlides2 {
     display: none;
-    max-width: 400px;
+    max-width: 100%;
 }
 
 
@@ -269,44 +385,16 @@ p {
 
 .slideshow-container {
     display: inline-block;
-    max-width: 40%;
+    max-width: 100%;
     position: relative;
-    margin-right: 60px;
 }
-
-.next-to {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-}
-
-.tags1,
-.tags2 {
-    border-radius: 20px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    padding: 6px;
-    display: inline-block;
-    font-size: 12px;
-}
-
-.tags1 {
-    border-color: crimson;
-    border-style: solid;
-}
-
-.tags2 {
-    border-color: white;
-    border-style: solid;
-}
-
 
 /* Next & previous buttons */
 
 .home .home-content .slideshow-container a {
     cursor: pointer;
     position: absolute;
-    top: 48%;
+    top: 36%;
     width: auto;
     padding: 16px;
     margin-left: -2px;
@@ -317,141 +405,249 @@ p {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: crimson;
+}
+.home .home-content .slideshow-container a:hover {
+    background-color: white;
+    color: crimson;
 }
 
 
-/* Position the "next button" to the right */
-
 .home .home-content .slideshow-container .next {
-    right: 0;
+    right: -15px;
     border-radius: 3px 0 0 3px;
 }
 
 
-/* responsive media queries */
 
+
+
+
+
+
+/* responsive media queries */
 @media (max-width: 1104px) {
-    .home .max-width {
+    .home .max-width,
+    .contactpage .max-width,
+    .afstudeerpage .max-width,
+    .cvpage .max-width,
+    .workpage .max-width {
         margin-left: 0px;
     }
+
+    .cvpage .home-content .text-2,
+    .workpage .home-content .text-2 {
+        font-size: 40px;
+    }
 }
+
+
+
+
+
+
 
 @media (max-width: 991px) {
     .max-width {
         padding: 0 50px;
-        }
+    }
 
     .tags1,
     .tags2 {
         font-size: 14px;
-        }
+    }
+
+    .cvpage .home-content .text-2,
+    .workpage .home-content .text-2 {
+        font-size: 40px;
+    }
 }
+
+
+
+
+
 
 @media (max-width: 750px) {
-    .next-to .tags1 {
-        padding: 0px;
-        margin: 0px;
-        border-radius: 0px;
-        border: none;
-        border-bottom: crimson solid;
-        margin-right: 6px;
-        }
 
-    .next-to .tags2 {
-        padding: 0px;
-        margin: 0px;
-        border-radius: 0px;
-        border: none;
-        border-bottom: white solid;
-        margin-right: 6px;
-        }
-
-    .slideshow-container {
-        max-width: 100%;
-        margin: 0px;
-        }
-
-    .next-to {
-        width: 100%;
-        }
+    .cvpage .home-content .text-2,
+    .workpage .home-content .text-2 {
+        font-size: 40px;
+    }
 }
+
+
+
+
+
+
+
 
 @media (max-width: 700px) {
-    .home .home-content .text-2 {
+    .home .home-content .text-2,
+    .contactpage .home-content .text-2,
+    .afstudeerpage .home-content .text-2 {
         font-size: 60px;
-        }
-    .home .home-content .text-3 {
+    }
+
+    .cvpage .home-content .text-2
+    .workpage .home-content .text-2 {
+        font-size: 40px;
+    }
+
+    .home .home-content .text-3,
+    .contactpage .home-content .text-3,
+    .afstudeerpage .home-content .text-3,
+    .cvpage .home-content .text-3,
+    .workpage .home-content .text-3 {
         font-size: 35px;
-        }
-    .home .home-content a {
+    }
+
+    .home .home-content a,
+    .contactpage .home-content a,
+    .afstudeerpage .home-content a,
+    .cvpage .home-content a,
+    .workpage .home-content a {
         font-size: 23px;
         padding: 10px 30px;
-        }
-    .home .home-content a:hover {
-        color: #DC143C;
-        background: none;
-        }
-    .next-to .tags1 {
-        padding: 0px;
-        margin: 0px;
-        border-radius: 0px;
-        border: none;
-        border-bottom: crimson solid;
-        margin-right: 6px;
-        }
+    }
 
-    .next-to .tags2 {
-        padding: 0px;
-        margin: 0px;
-        border-radius: 0px;
-        border: none;
-        border-bottom: white solid;
-        margin-right: 6px;
-        }
-}
+
+
+
+
+
+
+
 
 @media (max-width: 690px) {
     .max-width {
         padding: 0 23px;
-        }
-    .home .home-content .text-2 {
+    }
+
+    .cvpage .home-content .text-2 {
+        font-size: 40px;
+    }
+
+    .home .home-content .text-2,
+    .contactpage .home-content .text-2,
+    .afstudeerpage .home-content .text-2,
+    .workpage .home-content .text-2 {
         font-size: 50px;
-        }
-    .home .home-content .text-3 {
+    }
+
+    .home .home-content .text-3,
+    .contactpage .home-content .text-3,
+    .afstudeerpage .home-content .text-3,
+    .cvpage .home-content .text-3,
+    .workpage .home-content .text-3 {
         font-size: 32px;
-        }
-    .home .home-content a {
+    }
+
+    .home .home-content a,
+    .afstudeerpage .home-content a,
+    .cvpage .home-content a,
+    .workpage .home-content a {
         font-size: 20px;
-        }
+    }
+
+    .mySlides2 p {
+    color: white;
+    font-size: 14px;
+    margin: 20px;
+}
 }
 
-@media (max-width: 500px) {
-    .menu-btn {
-        margin: 2px;
-        }
-    .home .home-content .text-2 {
-        font-size: 40px;
-        }
-    .home .home-content .text-3 {
-        font-size: 27px;
-        }
-    .contact {
-        width: 100%;
-        text-align: center;
-        }
 
-    .home .home-content .text-2 a {
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .home .home-content .text-2,
+    .contactpage .home-content .text-2,
+    .afstudeerpage .home-content .text-2,
+    .cvpage .home-content .text-2,
+    .workpage .home-content .text-2
+    {
+        font-size: 40px;
+    }
+
+    .home .home-content .text-3,
+    .contactpage .home-content .text-3,
+    .afstudeerpage .home-content .text-3,
+    .cvpage .home-content .text-3,
+    .workpage .home-content .text-3 {
+        font-size: 27px;
+    }
+
+    .home .home-content .text-2 a,
+    .contactpage .home-content .text-2 a,
+    .afstudeerpage .home-content .text-2 a,
+    .cvpage .home-content .text-2 a {
         text-align: center;
         width: 100%;
         margin-left: 0px;
+    }
 
-        }
-    .home .home-content a {
+
+
+    .home .home-content a,
+    .afstudeerpage .home-content a,
+    .cvpage .home-content a
+    {
         font-size: 18px;
         width: 100%;
         text-align: center;
-        }
-    .text-3 br{
+    }
+
+    .text-3 br {
         display: inline;
     }
-}
+
+    .navbar .menu li {
+        display: block;
+        padding: 14px;
+    }
+
+    .logo {
+        margin-top: -105px;
+    }
+
+    .two {
+        display: block;
+        width: 100%;
+    }
+
+    button {
+        margin-right: 0px;
+        margin-left: -4px;
+    }
+
+
+    .contactpage .home-content a {
+        width: 100%;
+        text-align: center;
+                font-size: 18px;
+
+    }
+
+    .workpage .home-content a {
+        width: 48%;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+          font-size: 18px;
+
+    }
+
+    .workpage .home-content .oudport {
+        width: 100%;
+    }
+
+
+
+    }
