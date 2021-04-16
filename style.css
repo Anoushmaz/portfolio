@@ -170,7 +170,8 @@
     position: fixed;
     width: 100%;
     padding: 25px 0;
-    font-family: "Montserrat"
+    font-family: "Raleway", sans-serif;
+
 }
 .navbar .max-width {
     display: flex;
