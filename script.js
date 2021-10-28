@@ -6,7 +6,7 @@ $(document).ready(function () {
     // typing animation script
 
     var typed = new Typed(".typing", {
-        strings: ["UI/UX design", "design for web, Android and iOS", "concepting", "user research", "HTML/CSS responsive websites", "motion design", "illustrations", "branding"],
+        strings: ["UI/UX design", "design for Android", "design for iOS", "user research", "HTML/CSS", "responsive web design", "motion design", "illustrations", "concepting"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -51,11 +51,10 @@ function showSlides(n, no) {
 
 
 function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
-  document.execCommand("copy");
-  $temp.remove();
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
 }
-
 

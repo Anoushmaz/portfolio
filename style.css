@@ -3,9 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Raleway", sans-serif;
+}
 
-    
+img {
+    margin-bottom: 20px;
+    width: 80px;
+    border-radius: 100px;
+    transition: all 0.5s ease;
 }
 
 
@@ -76,8 +80,8 @@
 }
 .afstudeerpage {
     display: flex;
-    background-color: #171717;
-    background-image: url("Photos/GIF/GIF:timetravel.gif");
+    background-color:#171717;
+    background-image: url("/Photos/GIF/GIF:timetravel.gif");
     background-blend-mode: soft-light;
     min-height: 100%;
     background-position: center;
@@ -170,8 +174,7 @@
     position: fixed;
     width: 100%;
     padding: 25px 0;
-    font-family: "Raleway", sans-serif;
-
+    font-family: "Montserrat"
 }
 .navbar .max-width {
     display: flex;
@@ -191,7 +194,6 @@
 .navbar .menu li {
     list-style: none;
     display: inline-block;
-
 }
 .navbar .logo a {
     color: white;
@@ -255,7 +257,7 @@
 }
 
 /* Home LINK  */
-.home .home-content a {
+.afstudeerpage a, .home .home-content a {
     display: inline-block;
     border: solid crimson;
     border-radius: 6px;
