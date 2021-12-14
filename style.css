@@ -174,7 +174,7 @@ img {
     position: fixed;
     width: 100%;
     padding: 25px 0;
-    font-family: "Montserrat"
+    font-family: "Montserrat";
 }
 .navbar .max-width {
     display: flex;
