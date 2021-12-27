@@ -158,7 +158,7 @@ img {
     position: fixed;
     width: 100%;
     padding: 25px 0;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
 }
 .navbar .max-width {
     display: flex;
@@ -186,7 +186,7 @@ img {
     color: white;
     font-size: 34px;
     font-weight: 600;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 
 }
 
@@ -197,7 +197,7 @@ img {
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
-        font-family: "Montserrat";
+        font-family: "Montserrat", sans-serif;
 
 }
 .navbar .menu li a:hover{
